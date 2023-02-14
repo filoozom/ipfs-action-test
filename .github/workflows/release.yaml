@@ -20,7 +20,7 @@ jobs:
           timeout: 300000
           service: ipfs
           pin: true
-          host: ipfs.apyos.dev
+          host: ipfs-api.apyos.dev
           protocol: https
           port: 443
           headers: '{ "Authorization": "${{ secrets.IPFS_AUTHORIZATION }}" }'
