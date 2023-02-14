@@ -14,11 +14,11 @@ jobs:
           mkdir build
           echo "test" > build/index.html
 
-      uses: aquiladev/ipfs-action@v1
-      with:
-        path: ./build
-        service: ipfs
-        pin: true
-        host: ipfs.apyos.dev
-        headers: { "Authorization": "${{ secrets.IPFS_AUTHORIZATION }}" }
-        key: kurate
+      - uses: aquiladev/ipfs-action@v1
+        with:
+          path: ./build
+          service: ipfs
+          pin: true
+          host: ipfs.apyos.dev
+          headers: { "Authorization": "${{ secrets.IPFS_AUTHORIZATION }}" }
+          key: kurate
