@@ -20,5 +20,5 @@ jobs:
           service: ipfs
           pin: true
           host: ipfs.apyos.dev
-          headers: { "Authorization": "${{ secrets.IPFS_AUTHORIZATION }}" }
+          headers: '{ "Authorization": "${{ secrets.IPFS_AUTHORIZATION }}" }'
           key: kurate
