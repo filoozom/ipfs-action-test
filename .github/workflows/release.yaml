@@ -12,7 +12,7 @@ jobs:
       - name: Generate some data
         run: |
           mkdir build
-          echo "test" > build/index.html
+          echo "test 2" > build/index.html
 
       - uses: aquiladev/ipfs-action@v0.3.1
         with:
